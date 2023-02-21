@@ -47,9 +47,9 @@ void Image::dessinerRectangle(unsigned int Xmin, unsigned int Ymin, unsigned int
 {
     assert(dimx >= Xmax && dimy >= Ymax);
     assert(Xmax > Xmin && Ymax > Ymin);
-    for (int x = Xmin; x < Xmax; ++x)
+    for (unsigned int x = Xmin; x < Xmax; ++x)
     {
-        for (int y = Ymin; y < Ymax; ++y) setPix(x, y, couleur);
+        for (unsigned int y = Ymin; y < Ymax; ++y) setPix(x, y, couleur);
     }
 }
 
